@@ -2,7 +2,7 @@
 title: "Workout 1"
 author: "Abhishek Sharma"
 date: "3/8/2019"
-output: github_document
+output: "github_document"
 ---
 
 ```{r setup, include=FALSE}
