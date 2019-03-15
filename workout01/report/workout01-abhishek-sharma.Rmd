@@ -13,7 +13,7 @@ library(dplyr)
 # Stat 133 Workout 1
 
 ## Introduction: 
-In this report, we are analyzing shot charts and shooting patterns for 5 NBA players. These five players, Stephen Curry, Andre Iguodala, Klay Thompson, Draymond Green, and Kevin Durant, are the starting five for the Golden State Warriors 2016-2017 team. They won the 2017 NBA Championship, as well as the 2018 championship. Among these 5, there is a rich mixture of shooting, defense, athleticism and playmaking abilities. Because each player is so versatile, they pose a serious threat to any team that they face. Their talents have drawn large crowds to every game for years, and they have one of the loudest arenas in the NBA.
+In this report, we are analyzing shot charts and shooting patterns for 5 NBA players. These five players, Stephen Curry, Andre Iguodala, Klay Thompson, Draymond Green, and Kevin Durant, are the starting five for the Golden State Warriors 2016-2017 team. They won the 2017 NBA Championship, as well as the 2018 championship. Among these 5, there is a rich mixture of shooting, defense, athleticism and playmaking abilities. Because each player is so versatile, they pose a serious threat to any team that they face. Their talents have drawn large crowds to every game for years, and they have one of the loudest arenas in the NBA. As of now, with the addition of Demarcus Cousins, this team is poised to win the 2019 NBA Championship.
 
 ## Images: 
 ### Here is the starting five:
@@ -28,11 +28,17 @@ knitr::include_graphics("../images/hampton5.jpg")
 
 ### Some history about each player:
 
-* Stephen Curry: drafted in 2009, he has been a Warrior since entering the NBA, and holds records for the most Three Pointers made in a season
-* Klay Thompson: drafted in 2011 by the warriors. Klay has the record for most three pointers in an NBA game and in a playoff game (14 and 11).
-* Kevin Durant: Signed with team in 2016. Durant is the NBA's most versatile scorer, as he is tall, quick, and a great shooter. Not many NBA players possess all three qualities. He is the 2017 and 2018 NBA Finals MVP.
-* Draymond Green: A defensive player of the year in 2017, Draymond Green is able to lock down positions 1-5, and focuses his energy on stopping the other team from scoring.
-* Andre Iguodala: Signed with team in 2013, Iguodala is the 2015 NBA Finals MVP, leading his team to the championship by defending the best opposing player, LeBron James.
+* __Stephen Curry__: Point Guard, drafted in 2009, he has been a Warrior since entering the NBA, and holds records for the most Three Pointers made in a season. He is regarded as the greatest shooter of all time. Since joining the league, Curry has broken his own record for most three pointers in a season twice. He is on track to finish first in NBA history in three pointers made. 
+* __Klay Thompson__: Shooting Guard, drafted in 2011 by the warriors. Klay has the record for most three pointers in an NBA game and in a playoff game (14 and 11). Many fans believe he is the second best shooter in the NBA, behind Curry. He is on track to finish second all-time in three pointers made, behind Curry. 
+* __Kevin Durant__: Small Forward / Center, Signed with team in 2016. Durant is the NBA's most versatile scorer, as he is tall, quick, and a great shooter. Not many NBA players possess all three qualities. He is the 2017 and 2018 NBA Finals MVP. He holds multiple scoring titles in the NBA, and was the youngest NBA player to lead the league in scoring for a season at age 21. In all of Durant's seasons, he has scored at least 20 points per game. Michael Jordan and LeBron James are the only other two players who have also accomplished this. 
+* __Draymond Green__: Power Forward / Center, A defensive player of the year in 2017, Draymond Green is able to lock down positions 1-5, and focuses his energy on stopping the other team from scoring. Though not regarded as a scorer, Draymond will shoot three pointers if left open, and has drawn criticism for continuing to shoot at a relatively low percentage.
+* __Andre Iguodala__: Small Forward, Signed with team in 2013, Iguodala is the 2015 NBA Finals MVP, leading his team to the championship by defending the best opposing player, LeBron James. He is not as great of a shooter as his teammates, but when an opponent needs to be shut down from scoring, Iguodala is who they call in. Although the oldest of the bunch, Andre is also the most athletic of the five, finishing second place in an NBA Dunk contest to Nate Robinson in 2006.
+
+## Hypotheses
+
+#### Some expectations about the player stats:
+* We can expect to see solid shot charts for Curry, Thompson, and Durant. 
+* Iguodala and Green will have less populated shot charts. 
 
 ## Effective Shooting Percentages by Player - 2, 3, Overall
 
@@ -102,6 +108,6 @@ knitr::include_graphics("../images/gsw-shot-charts.png")
 ```
 
 ## Take-home message (shot charts): 
-As you can see from the shot charts, we notice who are the best offensive players on the team. Curry, Thompson, and Durant all can shoot from anywhere on the court. Iguodala and Green take far fewer shots, and have a greater proportion of misses. This is not an issue since these two are better known for their defensive prowess.
+As you can see from the shot charts, we notice who are the best offensive players on the team. Curry, Thompson, and Durant all can shoot from anywhere on the court. Iguodala and Green take far fewer shots, and have a greater proportion of misses. This is not an issue since these two are better known for their defensive prowess. The shot charts confirm what we initially knew about the players. Durant, being the most versatile scorer, has the most dispersed shot chart. Curry and Thompson have the most attempts from beyond three point range.
 
  
