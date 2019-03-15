@@ -101,18 +101,6 @@ final_3pt_table <- arrange(percentages2, desc(pct))
 stacked <- read.csv(file = "../data/shots-data.csv")
 stacked <- select(stacked, name, shot_type, shot_made_flag)
 stacked$made <- (stacked$shot_made_flag == "shot_yes") + 0
-head(stacked)
-```
-
-                name      shot_type shot_made_flag made
-    1 Andre Iguodala 2PT Field Goal        shot_no    0
-    2 Andre Iguodala 2PT Field Goal        shot_no    0
-    3 Andre Iguodala 2PT Field Goal       shot_yes    1
-    4 Andre Iguodala 2PT Field Goal        shot_no    0
-    5 Andre Iguodala 2PT Field Goal       shot_yes    1
-    6 Andre Iguodala 2PT Field Goal       shot_yes    1
-
-``` r
 percentages2 <- summarize(group_by(stacked, name), made = sum(made))
 shot_attempts = c(nrow(andre_data), nrow(dray_data), nrow(kevin_data), nrow(klay_data), nrow(steph_data))
 percentages2$attempts <- shot_attempts
