@@ -1,0 +1,48 @@
+---
+title: "Getting Started with Binomial"
+author: "Abhishek Sharma"
+date: "4/30/2019"
+output: html_vignette
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(binomial)
+```
+
+# Binomial
+
+The 'binomial' package is a minimal implementation to simulate the behaviors of a binomial distribution. Given variables such as number of trials, probability, and number of successes, one can compute a variety of binomial measure formulas such as mean, variance, mode, etc.
+
+## Basic Functions
+```{r intro}
+bin_choose(10, 5)
+bin_probability(2, 5, 0.5)
+```
+
+#Visualizing the Binomial Distribution
+```{r bindis}
+bd <- bin_distribution(10, .3)
+bd
+plot.bindis(bd)
+
+bc <- bin_cumulative(10, .4)
+bc
+plot.bincum(bc)
+```
+
+#The Binomial Variable Class
+```{r binva}
+bv <- bin_variable(10, 0.5)
+bv
+summary(bv)
+```
+
+## 'Measure' Functions
+```{r measures}
+bin_mean(10, .4)
+bin_variance(10, .4)
+bin_mode(10, .4)
+bin_skewness(10, .4)
+bin_kurtosis(10, .4)
+```
